@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+    <header>
+      <img src="./images/logo.svg" alt="">
+    </header>
+
+
+    <main>
+      <div class="input">
+        <div class="bill">
+          <label for="bill">Bill</label>
+            <div class="input-field">
+              <img src="./images/icon-dollar.svg" alt="">
+              <input type="text" name="bill" id="bill" placeholder="0" value="">
+          </div>
+        </div>
+
+        <div class="tip">
+          <label for="custom-tip">Select tip %</label>
+          <div class="mini-grid-container">
+            <div class="tip-btn">5%</div>
+            <div class="tip-btn">10%</div>
+            <div class="tip-btn">15%</div>
+            <div class="tip-btn">25%</div>
+            <div class="tip-btn">50%</div>
+            <input name = "custom-tip" type="text" placeholder="Custom" id="custom-tip">
+          </div>
+        </div>
+        <div class="people">
+          <label for="number-people">Number of People</label>
+          <div class="input-field not-zero">
+            <img src="./images/icon-person.svg" alt="">
+            <input type="text" name="people" placeholder = "0" id="number-people" value="">
+        </div>
+          
+        </div>
+      </div>
+
+      <div class="output">
+        <div>
+          <div class="tit">Tip Amount <span class="d-block">/ person</span></div>
+          <div class="result tip-per-person">$0.00</div>
+        </div>
+        <div>
+          <div class="tit">Total <span class="d-block">/ person</span></div>
+          <div class="result total-per-person">$0.00</div>
+        </div>
+        <button class="btn disable">RESET</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+</body>
+</html>
